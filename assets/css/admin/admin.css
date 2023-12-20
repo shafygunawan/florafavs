@@ -1,0 +1,391 @@
+/* 
+  =================================
+  styling untuk komponen sidebar
+  =================================
+ */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1051;
+  width: 300px;
+  height: 100vh;
+  padding-inline: 28px;
+  background-color: #ffffff;
+  border-right: 1px solid #e9e9e9;
+  box-shadow: 2px 2px 20px rgba(8, 15, 52, 0.0823529412);
+  overflow-y: auto;
+}
+.sidebar__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 22px;
+  border-bottom: 1px solid #e9e9e9;
+}
+.sidebar__brand {
+  text-decoration: none;
+}
+.sidebar__brand img {
+  display: block;
+  height: 30px;
+}
+.sidebar__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(100% - 80px);
+  gap: 160px;
+  padding-block: 28px 40px;
+}
+.sidebar__menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.sidebar__menu-list .sidebar__menu-list {
+  display: none;
+  margin-top: 4px;
+}
+.sidebar__menu-list .sidebar__menu-list_show {
+  display: flex;
+}
+.sidebar__menu-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  background-color: transparent;
+  color: #000000;
+  text-decoration: none;
+  border-radius: 10px;
+}
+.sidebar__menu-link i:nth-of-type(1) {
+  display: block;
+  font-size: 22px;
+}
+.sidebar__menu-link img:nth-of-type(2) {
+  display: block;
+  width: 18px;
+  margin-left: auto;
+  rotate: 90deg;
+}
+.sidebar__menu-link + .sidebar__menu-list .sidebar__menu-link {
+  padding: 12px 12px 12px 44px;
+}
+.sidebar__menu-link + .sidebar__menu-list .sidebar__menu-link img {
+  width: 18px;
+  margin-left: auto;
+}
+.sidebar__menu-link_active {
+  background-color: rgba(32, 78, 81, 0.0666666667);
+  color: #204e51;
+}
+.sidebar__menu-link_collapse img:nth-of-type(2) {
+  rotate: 0deg;
+}
+.sidebar__cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  background-color: #204e51;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 12px;
+  padding: 18px 22px;
+}
+.sidebar__cta i {
+  display: block;
+  font-size: 16px;
+}
+
+/* 
+  =================================
+  styling untuk komponen topbar
+  =================================
+ */
+.topbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1050;
+  display: flex;
+  align-items: center;
+  min-height: 77px;
+  padding-block: 14px;
+  background-color: #ffffff;
+  box-shadow: 2px 2px 20px rgba(8, 15, 52, 0.0823529412);
+}
+.topbar__container {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  justify-content: space-between;
+}
+.topbar__left {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.topbar__title {
+  font-size: 18px;
+  font-weight: 600;
+}
+.topbar__right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.topbar__profile {
+  position: relative;
+}
+.topbar__profile-toggler {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #000000;
+}
+.topbar__profile-img {
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin-right: 8px;
+  object-fit: cover;
+  border-radius: 9999rem;
+}
+.topbar__profile-name {
+  font-size: 14px;
+  margin-right: 12px;
+}
+.topbar__profile-dropdown-img {
+  display: block;
+  font-size: 14px;
+}
+.topbar__profile-menu-list {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  display: none;
+  flex-direction: column;
+  gap: 16px;
+  width: 202px;
+  padding: 24px;
+  background-color: #ffffff;
+  border: 1px solid #e9e9e9;
+  border-radius: 14px;
+  box-shadow: 2px 2px 20px rgba(8, 15, 52, 0.0823529412);
+}
+.topbar__profile input {
+  display: none;
+}
+.topbar__profile input:checked + .topbar__profile-menu-list {
+  display: flex;
+}
+.topbar__profile-menu-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #000000;
+  font-size: 14px;
+  text-decoration: none;
+}
+.topbar__profile-menu-link i {
+  display: block;
+  font-size: 18px;
+  color: #199623;
+}
+.topbar__profile-menu-divider {
+  width: 100%;
+  margin-block: 4px;
+  border: none;
+  border-top: 1px solid #e9e9e9;
+}
+
+/* 
+  =================================
+  styling untuk komponen content
+  =================================
+ */
+.content__container {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  min-height: 100vh;
+}
+.content__main {
+  padding-block: 48px 64px;
+}
+.content__footer {
+  padding-block: 24px;
+  color: #8d8d91;
+  font-size: 14px;
+  text-align: center;
+  border-top: 1px solid #e9e9e9;
+}
+.content__footer a {
+  color: #204e51;
+  text-decoration: none;
+}
+
+/* 
+  =================================
+  styling untuk komponen input
+  =================================
+ */
+.input {
+  padding: 12px 18px;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  background-color: #f6f6f6;
+  color: #000000;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+}
+.input-select {
+  width: 100%;
+  padding: 12px 18px;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  appearance: none;
+  background-image: url("../../img/arrow-down-gray.png");
+  background-repeat: no-repeat;
+  background-position: right 18px center;
+  background-color: #f6f6f6;
+  color: #000000;
+  border: none;
+  border-radius: 10px;
+}
+.input-label {
+  display: block;
+  width: auto;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.input-help {
+  margin-block: 10px;
+}
+.input-error {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #931c32;
+}
+
+/* 
+  =================================
+  styling untuk komponen page wrapper
+  =================================
+ */
+.page-wrapper {
+  margin-left: 300px;
+}
+
+/* 
+  =================================
+  styling untuk komponen admin
+  =================================
+ */
+.admin {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.admin__header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.admin__back {
+  color: #8d8d91;
+  font-size: 16px;
+}
+.admin__back a {
+  color: #204e51;
+  text-decoration: none;
+}
+.admin__title {
+  font-size: 22px;
+  font-weight: 700;
+}
+.admin__subtitle {
+  color: #8d8d91;
+  font-size: 18px;
+}
+.admin__actions {
+  display: flex;
+  gap: 10px;
+}
+.admin__button {
+  display: block;
+  padding: 10px 22px;
+  background-color: #ffffff;
+  color: #204e51;
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  border: 1px solid #204e51;
+  border-radius: 10px;
+}
+.admin__body {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.admin__filters {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.admin__filters .input {
+  background-color: #ffffff;
+  box-shadow: 2px 2px 20px rgba(8, 15, 52, 0.0823529412);
+}
+.admin__card {
+  padding: 36px;
+  background-color: #ffffff;
+  border-radius: 24px;
+  box-shadow: 2px 2px 20px rgba(8, 15, 52, 0.0823529412);
+}
+.admin__card-title {
+  font-size: 16px;
+  font-weight: 700;
+}
+.admin__card hr {
+  margin-block: 20px 52px;
+  border: none;
+  border-top: 1px solid #e9e9e9;
+}
+.admin table {
+  width: 100%;
+  font-size: 16px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.admin table > :not(caption) > * > * {
+  padding: 16px 16px;
+}
+.admin table th,
+.admin table tfoot td {
+  text-align: inherit;
+  font-weight: 700;
+  background-color: rgba(32, 78, 81, 0.0666666667);
+}
+.admin table a {
+  color: #204e51;
+}
+.admin table .button {
+  display: inline-block;
+  padding: 0.35em 0.65em;
+  background-color: #ffffff;
+  color: #204e51;
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  border: 1px solid #204e51;
+  border-radius: 10px;
+}

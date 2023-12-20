@@ -1,0 +1,41 @@
+/* 
+  =================================
+  styling untuk komponen page single
+  =================================
+ */
+.page-single {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.page-single img {
+  display: block;
+  height: 200px;
+  margin-inline: auto;
+  border-radius: 10px;
+}
+.page-single__actions-container {
+  display: flex;
+  justify-content: space-between;
+}
+.page-single__actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+.page-single__button {
+  display: block;
+  padding: 18px 40px;
+  background-color: #ffffff;
+  color: #204e51;
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  border: 1px solid #204e51;
+  border-radius: 12px;
+}
+.page-single__button_primary {
+  background-color: #204e51;
+  color: #ffffff;
+}

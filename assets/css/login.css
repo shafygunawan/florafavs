@@ -1,0 +1,53 @@
+/* 
+  =================================
+  styling untuk halaman login
+  =================================
+ */
+.login {
+  display: flex;
+  justify-content: space-between;
+  padding: 148px 24px 84px;
+}
+.login__left {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 504px;
+}
+.login__left > h1 {
+  margin-bottom: 14px;
+  font-size: 48px;
+  font-weight: 700;
+}
+.login__right {
+  position: relative;
+  width: 100%;
+  max-width: 632px;
+}
+.login__right img {
+  position: absolute;
+  top: -5%;
+  left: -15%;
+  display: block;
+  width: 900px;
+  z-index: -1;
+}
+.login p {
+  font-size: 18px;
+  color: #8d8d91;
+}
+.login p a {
+  color: #204e51;
+  text-decoration: none;
+}
+.login__button {
+  display: block;
+  padding: 20px 40px;
+  background-color: #204e51;
+  color: #ffffff;
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+}

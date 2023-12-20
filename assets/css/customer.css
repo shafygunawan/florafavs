@@ -1,0 +1,685 @@
+/* 
+  =================================
+  styling untuk komponen navbar
+  =================================
+ */
+.navbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1050;
+  background-color: #ffffff;
+}
+.navbar__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px 24px;
+}
+.navbar__brand {
+  text-decoration: none;
+}
+.navbar__brand img {
+  display: block;
+  height: 36px;
+}
+.navbar__nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.navbar__link {
+  font-size: 18px;
+  font-weight: 500;
+  color: #000000;
+  text-decoration: none;
+}
+.navbar__right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.navbar__search {
+  display: block;
+  width: 32px;
+  height: 32px;
+}
+.navbar__cta {
+  display: block;
+  background-color: #204e51;
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 12px;
+  padding: 16px 26px;
+}
+.navbar__profile {
+  position: relative;
+  display: block;
+}
+.navbar__profile-toggler {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #000000;
+}
+.navbar__profile-img {
+  display: block;
+  width: 54px;
+  height: 54px;
+  object-fit: cover;
+  border-radius: 9999rem;
+}
+.navbar__profile-menu-list {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  display: none;
+  flex-direction: column;
+  gap: 16px;
+  width: 232px;
+  padding: 24px;
+  background-color: #ffffff;
+  border: 1px solid #e9e9e9;
+  border-radius: 14px;
+  box-shadow: 2px 2px 20px rgba(8, 15, 52, 0.0823529412);
+}
+.navbar__profile input {
+  display: none;
+}
+.navbar__profile input:checked + .navbar__profile-menu-list {
+  display: flex;
+}
+.navbar__profile-menu-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #000000;
+  font-size: 16px;
+  text-decoration: none;
+}
+.navbar__profile-menu-link i {
+  display: block;
+  font-size: 22px;
+  color: #199623;
+}
+.navbar__profile-menu-divider {
+  width: 100%;
+  margin-block: 4px;
+  border: none;
+  border-top: 1px solid #e9e9e9;
+}
+
+/* 
+  =================================
+  styling untuk komponen footer
+  =================================
+ */
+.footer {
+  margin-top: 84px;
+  padding-top: 80px;
+  padding-bottom: 32px;
+  border-top: 1px solid #e9e9e9;
+}
+.footer__header {
+  max-width: 466px;
+  margin-inline: auto;
+}
+.footer__brand {
+  display: block;
+  margin-bottom: 16px;
+  text-decoration: none;
+}
+.footer__brand img {
+  display: block;
+  height: 44px;
+  margin-inline: auto;
+}
+.footer__description {
+  font-size: 18px;
+  color: #8d8d91;
+  line-height: 30px;
+  margin-bottom: 32px;
+  text-align: center;
+}
+.footer__socmed-list {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+.footer__socmed-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: #204e51;
+  text-decoration: none;
+  border-radius: 9999px;
+}
+.footer__socmed-link img {
+  width: 15px;
+}
+.footer hr {
+  border: none;
+  border-top: 1px solid #e9e9e9;
+  margin: 80px 0 36px;
+}
+.footer__copyright {
+  color: #8d8d91;
+  font-size: 18px;
+  text-align: center;
+}
+.footer__copyright a {
+  color: #204e51;
+  text-decoration: none;
+}
+
+/* 
+  =================================
+  styling untuk komponen alert
+  =================================
+ */
+.alert {
+  position: relative;
+  padding: 20px 24px;
+  font-size: 18px;
+  color: #000000;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 12px;
+}
+.alert_success {
+  color: #204e51;
+  background-color: rgba(32, 78, 81, 0.0666666667);
+  border: 1px solid #204e51;
+}
+.alert_danger {
+  color: #931c32;
+  background-color: rgba(147, 28, 50, 0.0666666667);
+  border: 1px solid #931c32;
+}
+
+/* 
+  =================================
+  styling untuk komponen badge
+  =================================
+ */
+.badge {
+  display: inline-block;
+  padding: 0.35em 0.65em;
+  font-size: 0.75em;
+  font-weight: 700;
+  line-height: 1;
+  color: #000000;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 9999rem;
+}
+.badge_success {
+  color: #ffffff;
+  background-color: #199623;
+}
+.badge_danger {
+  color: #ffffff;
+  background-color: #931c32;
+}
+.badge_warning {
+  color: #ffffff;
+  background-color: #b58700;
+}
+
+/* 
+  =================================
+  styling untuk komponen filter
+  =================================
+ */
+.filter {
+  display: flex;
+  align-items: flex-start;
+  gap: 26px;
+  padding: 84px 24px;
+}
+.filter__search {
+  position: relative;
+  width: 499px;
+}
+.filter__search label {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  translate: 0 -50%;
+}
+.filter__search label i {
+  display: block;
+  font-size: 28px;
+  color: #8d8d91;
+}
+.filter__search input {
+  width: 100%;
+  height: 86px;
+  padding: 16px 20px 16px 68px;
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  border-radius: 14px;
+  box-shadow: 2px 2px 20px rgba(8, 15, 52, 0.0823529412);
+}
+.filter__search input::placeholder {
+  color: #8d8d91;
+  opacity: 1;
+}
+.filter__search button {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  translate: 0 -50%;
+  display: block;
+  padding: 16px 26px;
+  background-color: #204e51;
+  color: #ffffff;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+}
+.filter__list {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+.filter__item {
+  position: relative;
+  width: 223px;
+}
+.filter__item label {
+  position: absolute;
+  top: 50%;
+  left: 18px;
+  translate: 0 -50%;
+}
+.filter__item label i {
+  display: block;
+  font-size: 24px;
+  color: #8d8d91;
+}
+.filter__item select {
+  width: 100%;
+  height: 86px;
+  padding: 18px 48px 18px 52px;
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  appearance: none;
+  background-image: url("../img/arrow-down-gray.png");
+  background-repeat: no-repeat;
+  background-position: right 18px center;
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  border-radius: 14px;
+  box-shadow: 2px 2px 20px rgba(8, 15, 52, 0.0823529412);
+}
+
+/* 
+  =================================
+  styling untuk komponen hero
+  =================================
+ */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 84px;
+}
+.hero__left {
+  max-width: 537px;
+}
+.hero__title {
+  margin-bottom: 14px;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60px;
+}
+.hero__subtitle {
+  margin-bottom: 40px;
+  color: #8d8d91;
+  font-size: 18px;
+  line-height: 30px;
+}
+.hero__button {
+  display: inline-block;
+  background-color: #204e51;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 12px;
+  padding: 20px 40px;
+}
+.hero__right {
+  display: flex;
+  gap: 26px;
+}
+.hero__img-group {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+.hero__img-group img {
+  display: block;
+  width: 309px;
+}
+.hero__img-group:first-of-type {
+  padding-top: 65px;
+}
+
+/* 
+  =================================
+  styling untuk komponen how
+  =================================
+ */
+.how {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  padding-block: 84px;
+}
+.how__header {
+  margin-inline: auto;
+  max-width: 316px;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+}
+.how__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+}
+.how__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+.how__item {
+  width: 334px;
+}
+.how__img {
+  display: block;
+  width: 228px;
+  height: 228px;
+  margin: 40px auto;
+  object-fit: cover;
+  border-radius: 9999rem;
+}
+.how__title {
+  margin-bottom: 16px;
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+}
+.how__description {
+  color: #8d8d91;
+  font-size: 18px;
+  text-align: center;
+  line-height: 30px;
+}
+.how__button {
+  display: block;
+  background-color: #204e51;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 12px;
+  padding: 20px 40px;
+}
+
+/* 
+  =================================
+  styling untuk komponen input
+  =================================
+ */
+.input {
+  padding: 20px 24px;
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  background-color: #f6f6f6;
+  color: #000000;
+  border: none;
+  border-radius: 12px;
+  width: 100%;
+}
+.input-label {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.input-help {
+  margin-block: 10px 16px;
+}
+.input-error {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #931c32;
+}
+
+/* 
+  =================================
+  styling untuk komponen join
+  =================================
+ */
+.join {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 26px;
+  padding-block: 84px;
+}
+.join__card {
+  padding: 88px 65px 92px;
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 24px;
+  box-shadow: 2px 2px 20px rgba(8, 15, 52, 0.0823529412);
+}
+.join__card_admin {
+  background-color: #204e51;
+  color: #ffffff;
+}
+.join__title {
+  margin-bottom: 14px;
+  color: inherit;
+  font-size: 32px;
+  font-weight: 700;
+}
+.join__description {
+  margin-bottom: 34px;
+  color: #8d8d91;
+  font-size: 18px;
+  line-height: 30px;
+}
+.join__button {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 12px;
+  padding: 20px 40px;
+}
+.join__button_primary {
+  background-color: #204e51;
+  color: #ffffff;
+}
+
+/* 
+  =================================
+  styling untuk komponen products
+  =================================
+ */
+.products {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  padding-block: 84px;
+}
+.products__body {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 45px;
+  column-gap: 26px;
+}
+.products__card {
+  position: relative;
+  border-radius: 24px;
+  box-shadow: 2px 2px 20px rgba(8, 15, 52, 0.0823529412);
+}
+.products__card-top {
+  position: relative;
+}
+.products__card-img {
+  display: block;
+  width: 100%;
+  height: 228px;
+  object-fit: cover;
+  border-radius: 24px 24px 0 0;
+}
+.products__card-body {
+  padding: 40px 32px 28px;
+}
+.products__card-price {
+  margin-bottom: 12px;
+  font-size: 22px;
+  font-weight: 700;
+}
+.products__card-name {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.products__card-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  color: #8d8d91;
+}
+.products__card-info i {
+  display: block;
+  font-size: 22px;
+}
+.products__card hr {
+  border: none;
+  border-top: 1px solid #e9e9e9;
+  margin-block: 36px 26px;
+}
+.products__card-actions {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: flex-start;
+  gap: 18px;
+}
+.products__card-action-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 14px;
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: #ffffff;
+  color: #000000;
+  text-decoration: none;
+  border: none;
+  border-radius: 9999px;
+  box-shadow: 2px 2px 20px rgba(8, 15, 52, 0.0823529412);
+}
+.products__card-action-button_primary {
+  background-color: #204e51;
+  color: #ffffff;
+}
+.products__card-action-button i {
+  display: block;
+  font-size: 20px;
+}
+.products__empty {
+  grid-column: 1/4;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+/* 
+  =================================
+  styling untuk komponen promotion
+  =================================
+ */
+.promotion {
+  padding-block: 84px;
+  background-color: #f9f9f9;
+}
+.promotion__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.promotion__right {
+  max-width: 533px;
+}
+.promotion__title {
+  margin-bottom: 26px;
+  font-size: 32px;
+  font-weight: 700;
+}
+.promotion__description {
+  margin-bottom: 40px;
+  color: #8d8d91;
+  font-size: 18px;
+  line-height: 30px;
+}
+.promotion__img {
+  display: block;
+  width: 450px;
+  height: 502px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.promotion__img:last-of-type {
+  margin-top: -251px;
+  margin-left: 225px;
+}
+
+/* 
+  =================================
+  styling untuk komponen section header
+  =================================
+ */
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 67px;
+}
+.section-header h2 {
+  font-size: 32px;
+  font-weight: 700;
+}
+.section-header a {
+  display: block;
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 12px;
+  padding: 20px 40px;
+  box-shadow: 2px 2px 20px rgba(8, 15, 52, 0.0823529412);
+}

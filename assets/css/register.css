@@ -1,0 +1,42 @@
+/* 
+  =================================
+  styling untuk halaman register
+  =================================
+ */
+.register {
+  display: flex;
+  justify-content: center;
+  padding: 84px 24px;
+}
+.register__form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 604px;
+}
+.register__form > h1 {
+  margin-bottom: 14px;
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+}
+.register p {
+  font-size: 18px;
+  color: #8d8d91;
+  text-align: center;
+}
+.register p a {
+  color: #204e51;
+  text-decoration: none;
+}
+.register__button {
+  display: block;
+  padding: 20px 40px;
+  background-color: #204e51;
+  color: #ffffff;
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+}

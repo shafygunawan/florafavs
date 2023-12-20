@@ -1,0 +1,36 @@
+/* 
+  =================================
+  styling untuk halaman transactions
+  =================================
+ */
+.transactions {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  padding-block: 84px;
+}
+.transactions__body {
+  padding: 48px;
+  border-radius: 24px;
+  box-shadow: 2px 2px 20px rgba(8, 15, 52, 0.0823529412);
+}
+.transactions__table {
+  width: 100%;
+  font-size: 18px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.transactions__table > :not(caption) > * > * {
+  padding: 16px 16px;
+}
+.transactions__table th {
+  text-align: inherit;
+  font-weight: 700;
+  background-color: rgba(32, 78, 81, 0.0666666667);
+}
+.transactions__table a {
+  color: #204e51;
+}
+.transactions__empty {
+  text-align: center;
+}
